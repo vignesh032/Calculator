@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    min-height: 100vh;
+    max-width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+.container{
+    height: 75vh;
+    width: max-content;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(43, 43, 43);
+    padding: 1em;
+    object-fit: cover;
+    border-radius: 1em;
+}
+.text{
+    display: flex;
+    /* padding: 1em 2em 1em 0em; */
+    padding: 1em;
+    justify-content: flex-end;
+}
+
+#input{
+    width: 75%;
+    /* height: vh; */
+    text-decoration: none;
+    border: none;
+    right: 0;
+    outline: none;
+    color: white;
+    font-size: 2.2em;
+    text-align: right;
+    background-color: transparent;
+}
+#input::placeholder{
+    color: white;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    height: 8vh;
+    width: 6vw;
+    border: none;
+    outline: none;
+    font-size: 1.3em;
+    cursor: pointer;
+    padding: 1em;
+    margin: 1em;
+    object-fit: contain;
+    border-radius: 50%;
+}
+button:hover{
+    box-shadow: -2px -3px 10px  rgb(119, 99, 73);
+}
+.col{
+    background-color: orange;
+}
+@media (max-width:600px){
+    *{
+        font-size: 14px;
+    }
+    .container{
+        width: max-content;
+        padding: 1em;
+        margin: 1em;
+    }
+    #input{
+        padding-right: 1.5em;
+    }.buttons{
+        padding: 0;
+    }
+    button{
+        padding: 0;
+        width: 3em;
+        margin: 1;
+    }
+}
+@media (min-width:600px) and (max-width:900px){
+    *{
+        font-size: 14px;
+    }
+    .container{
+        width: max-content;
+        height: max-content;
+        padding: 0;
+    }
+    #input{
+        padding-right: 1em;
+    }.buttons{
+        padding: 0;
+    }
+    button{
+        padding: 0;
+        width: 3em;
+        margin: 1;
+    }
+}
+@media(min-width:900px) and (max-width:1200px){
+    #input{
+        padding-right: 2em;
+    }
+}
